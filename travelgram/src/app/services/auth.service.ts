@@ -7,7 +7,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 export class AuthService {
   constructor(private auth: AngularFireAuth) {}
 
-  signUp(email: string, password: string) {
+  singUp(email: string, password: string) {
     return this.auth.createUserWithEmailAndPassword(email, password);
   }
 
